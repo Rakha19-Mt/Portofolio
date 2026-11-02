@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portofolio & Dokumentasi Kegiatan Rakhmat Hidayat, S.Kom — Web Development, AI YOLOv8, Desain Grafis, dan Event Organizer.">
+    <title>Portofolio & Kegiatan — Rakhmat Hidayat, S.Kom</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Unified Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- CREATIVE BACKGROUND MATRIX & ORNAMENTS -->
+    <div class="bg-creative-grid"></div>
+    <div class="gradient-background">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+    </div>
+
+    <!-- SITE HEADER / NAVIGATION -->
+    <header class="site-header">
+        <nav class="container main-nav">
+            <a href="index.html" class="brand-logo">
+                RH<span class="dot">.</span>
+                <span class="brand-tagline">Rakhmat Hidayat</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Saya</a></li>
+                <li><a href="portfolio.html" class="active">Portofolio & Kegiatan</a></li>
+                <li><a href="contact.html">Kontak & Unduh CV</a></li>
+                <li>
+                    <a href="contact.html" class="nav-btn-talk">
+                        Let's Talk
+                        <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                            <line x1="7" y1="17" x2="17" y2="7" />
+                            <polyline points="7 7 17 7 17 17" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+                <svg class="icon-svg" viewBox="0 0 24 24">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="ornament-cross" style="top:110px; right:60px;">+</div>
+            <div class="container">
+                <span class="eyebrow">
+                    <span class="pulse-dot"></span>
+                    MY CREATIVE SPACE & WORKS
+                </span>
+                <h1>Portofolio Proyek & <br><span class="green-text">Dokumentasi Aktivitas</span></h1>
+                <p class="lead">
+                    Kumpulan proyek rekayasa perangkat lunak, sistem kecerdasan buatan (AI YOLOv8), karya desain visual
+                    publikasi, video demo interaktif YouTube, serta foto dokumentasi kegiatan lapangan industri kreatif.
+                </p>
+            </div>
+        </section>
+
+        <!-- MAIN GALLERY SECTION -->
+        <section class="section container">
+            <!-- Filter Bar -->
+            <div class="portfolio-filter-bar">
+                <button class="filter-btn active" data-filter="all">
+                    <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                        <polyline points="2 17 12 22 22 17" />
+                        <polyline points="2 12 12 17 22 12" />
+                    </svg>
+                    Semua Karya (18)
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                    </svg>
+                    Web & AI Projects (4)
+                </button>
+                <button class="filter-btn" data-filter="graphic">
+                    <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                        <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                    </svg>
+                    Desain Grafis (6)
+                </button>
+                <button class="filter-btn" data-filter="activity">
+                    <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                        <polygon points="23 7 16 12 23 17 23 7" />
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                    </svg>
+                    Foto Kegiatan & Video (8)
+                </button>
+            </div>
+
+            <!-- PROJECTS & ACTIVITIES GRID -->
+            <div class="portfolio-grid">
+
+                <!-- 1. Web Dusun Cikmas (Supports YouTube Video Demo) -->
+                <article class="portfolio-card" data-category="activity" data-badge="VIDEO"
+                    data-title="Podcast Himforma"
+                    data-desc="Website HIMAX (Himpunan Mahasiswa Informatika) Universitas PGRI Semarang"
+                    data-tags="Podcast, Host, Video" data-youtube="https://youtu.be/1wdC_eEWxso?si=Wm-P7G_UvCYTuSa2">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/himax.png" alt="Himax HIMFOR">
+                        <span class="portfolio-badge">Video</span>
+                        <span class="video-badge-pill">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
+                            </svg>
+                            PLAY VIDEO
+                        </span>
+                        <div class="play-video-overlay">
+                            <div class="play-btn-circle">
+                                <svg class="icon-svg icon-svg-lg" viewBox="0 0 24 24">
+                                    <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Podcast Himforma</h3>
+                        <p>Podcast Himpunan Mahasiswa Informatika dengan Komunitas mahasiswa Informatika Universitas
+                            PGRI Semarang</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Podcast</span>
+                            <span class="meta-pill">Video Host</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. AI YOLOv8 Deteksi Daun Padi (Supports YouTube Video Demo) -->
+                <article class="portfolio-card" data-category="web" data-badge="ARTIFICIAL INTELLIGENCE"
+                    data-title="Sistem Deteksi Penyakit Daun Padi Berbasis AI (YOLOv8)"
+                    data-desc="Sistem kecerdasan buatan berbasis algoritma canggih YOLOv8 yang dirancang untuk mendeteksi dan mengidentifikasi penyakit pada daun padi secara otomatis melalui analisis citra presisi tinggi guna mendukung smart agriculture."
+                    data-tags="Python, YOLOv8, Deep Learning, OpenCV, Computer Vision"
+                    data-youtube="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/padi.png" alt="Sistem Deteksi Penyakit Daun Padi Berbasis AI">
+                        <span class="portfolio-badge">AI & COMPUTER VISION</span>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Sistem Deteksi Penyakit Padi Berbasis AI</h3>
+                        <p>Sistem berbasis YOLOv8 yang dirancang untuk mendeteksi dan mengidentifikasi penyakit pada
+                            daun padi secara otomatis melalui analisis citra.</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">YOLOv8</span>
+                            <span class="meta-pill">Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. Game Edukasi Kartu Planet -->
+                <article class="portfolio-card" data-category="web" data-badge="INTERACTIVE MEDIA"
+                    data-title="Game Edukasi Kartu Planet (Tata Surya)"
+                    data-desc="Game Edukasi Kartu Planet merupakan media pembelajaran interaktif yang dirancang untuk mengenalkan tata surya dan karakteristik planet melalui permainan kartu interaktif yang mengasyikkan dan edukatif bagi pelajar."
+                    data-tags="JavaScript, Canvas, UI/UX Design, Gamification, Edukasi">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/planet.png" alt="Game Edukasi Kartu Planet">
+                        <span class="portfolio-badge">GAME EDUKASI</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Game Edukasi Kartu Planet</h3>
+                        <p>Media pembelajaran interaktif yang dirancang untuk mengenalkan tata surya dan karakteristik
+                            planet melalui permainan kartu interaktif dan edukatif.</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">JavaScript</span>
+                            <span class="meta-pill">Interactive Media</span>
+                            <span class="meta-pill">Gamification</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. Work Calendar System -->
+                <article class="portfolio-card" data-category="web" data-badge="WEB SYSTEM"
+                    data-title="Work Calendar & Event Management System"
+                    data-desc="Sistem penjadwalan dan manajemen kalender kerja organisasi berbasis web yang mempermudah tim dalam memonitor agenda kegiatan, tenggat waktu proyek, dan pembagian tugas kerja secara real-time."
+                    data-tags="PHP, MySQL, Bootstrap, FullCalendar, CRUD">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/mag.png" alt="Work Calendar System">
+                        <span class="portfolio-badge">INTERNAL APP</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Work Calendar & Event System</h3>
+                        <p>Aplikasi kalender kerja dan manajemen tugas terintegrasi untuk organisasi dan operasional
+                            tim.</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">PHP & MySQL</span>
+                            <span class="meta-pill">Management Tool</span>
+                            <span class="meta-pill">Calendar UI</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Abiyasa Nawasena -->
+                <article class="portfolio-card" data-category="graphic" data-badge="DESAIN GRAFIS & POSTER"
+                    data-title="Identitas Visual & Poster 'Abiyasa Nawasena'"
+                    data-desc="Perancangan APP Mobile E-WALLET UANGKU Menggabungkan unsur tipografi modern dengan ornamen visual yang dinamis."
+                    data-tags="Graphic Design, Adobe Photoshop, Typography, Event Poster">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/uidana.png" alt="UANGKU - UI UX Design">
+                        <span class="portfolio-badge">UI UX DESIGN</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>UI UX Design APP Mobile "UANGKU"</h3>
+                        <p>Karya desain UI UX APP Mobile "E-WALLET UANGKU" dengan eksplorasi tipografi tegas dan
+                            perpaduan palet warna estetik.</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Figma</span>
+                            <span class="meta-pill">UI UX Design</span>
+                            <span class="meta-pill">Branding</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. Idul Adha Social Media -->
+                <article class="portfolio-card" data-category="graphic" data-badge="UI UX DESIGN"
+                    data-title="Desain Publikasi & Feed Idul Adha"
+                    data-desc="Perancangan Ui Ux sistem mobile Eco Grow Rekomendasi Tanaman Berbasis AI."
+                    data-tags="Figma, UI UX Design, AI, Branding">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/uibuah.png" alt="Eco Grow (UI UX Design)">
+                        <span class="portfolio-badge">UI UX DESIGN</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Eco Grow (UI UX Design)</h3>
+                        <p>Perancangan Ui Ux sistem mobile Eco Grow Rekomendasi Tanaman Berbasis AI.</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Figma</span>
+                            <span class="meta-pill">UI UX Design</span>
+                            <span class="meta-pill">AI</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. KKN UPGRIS Mengabdi -->
+                <article class="portfolio-card" data-category="web" data-badge="BRANDING PROGRAM"
+                    data-title="Website Company Profil Dusun Cikmas Karimunjawa"
+                    data-desc="Website Company Profile Dusun Cikmas Karimunjawa Oleh"
+                    data-tags="Branding, Banner Design, Identity Kit, Illustrator">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/cik.png" alt="Website Company Profil Dusun Cikmas Karimunjawa"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">Compnay Porfile</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Website Company Profile Dusun Cikmas Karimunjawa</h3>
+                        <p>Website Company Profile Dusun Cikmas Karimunjawa Oleh Kelompok 3 KKN Mengabdi Universitas
+                            PGRI Semarang</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Web</span>
+                            <span class="meta-pill">Design</span>
+                            <span class="meta-pill">WordPress</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. Jersey & Apparel -->
+                <article class="portfolio-card" data-category="graphic" data-badge="APPAREL DESIGN"
+                    data-title="Desain Apparel Jersey & Merchandise"
+                    data-desc="Perancangan Design kaos dan Suporter Football"
+                    data-tags="Apparel Design, Jersey Mockup, Merchandise, CorelDRAW">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/baju.png" alt="Desain Jersey Informatika"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">APPAREL MOCKUP</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Desain Jersey & Merchandise Suporter Sepak Bola</h3>
+                        <p>Karya perancangan pola apparel jersey dan merchandise resmi dengan aksen olahraga modern.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Apparel Design</span>
+                            <span class="meta-pill">3D Mockup</span>
+                            <span class="meta-pill">Merchandise</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. Feed Edukasi Himpunan -->
+                <article class="portfolio-card" data-category="graphic" data-badge="CONTENT CREATION"
+                    data-title="Admin Media Himpunan Mahasiswa Informatika Sekaligus Kepala Bidang Kominfo"
+                    data-desc="Admin Media Himpunan Mahasiswa Informatika Sekaligus Kepala Bidang Kominfo"
+                    data-tags="Content Writing, Carousel Feed,Humas, Figma">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/himfor.png" alt="Konten Edukasi Himpunan"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">ADMIN MEDIA & HUMAS</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Admin Media Himpunan Mahasiswa Informatika Sekaligus Kepala Bidang Kominfo</h3>
+                        <p>MEDIA Himpunan Mahasiswa Informatika Universitas PGRI Semarang</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Instagram Carousel</span>
+                            <span class="meta-pill">Content Writing</span>
+                            <span class="meta-pill">Tech Info</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Media Informatika-->
+                <article class="portfolio-card" data-category="graphic" data-badge="CONTENT CREATION"
+                    data-title="Admin Media Program studi Informatika Universitas PGRI Semarang"
+                    data-desc="Admin Media Program Studi Informatika Universitas PGRI Semarang"
+                    data-tags="Content Writing, Carousel Feed,Humas, Figma">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/medin.png" alt="Konten Edukasi Informatika"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">ADMIN MEDIA & HUMAS</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Admin Media Sosial Program Studi Informatika Universitas PGRI Semarang </h3>
+                        <p>MEDIA Sosial Program Studi Informatika Universitas PGRI Semarang</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Instagram Carousel</span>
+                            <span class="meta-pill">Content Writing</span>
+                            <span class="meta-pill">Tech Info</span>
+                            <span class="meta-pill">Informatika</span>
+                            <span class="meta-pill">Web Designer</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- KKN Upgris -->
+                <article class="portfolio-card" data-category="graphic" data-badge="CONTENT CREATION"
+                    data-title="Admin Media Program studi Informatika Universitas PGRI Semarang"
+                    data-desc="Admin Media Program Studi Informatika Universitas PGRI Semarang"
+                    data-tags="Content Writing, Carousel Feed,Humas, Figma">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/kkn.png" alt="KKN Upgris"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">ADMIN MEDIA & HUMAS</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Admin Media Kegiatan Kuliah Kerja Nyata Universitas PGRI Semarang </h3>
+                        <p>Admin Media Kegiatan Kuliah Kerja Nyata Universitas PGRI Semarang Di KarimunJawa</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Instagram Posts</span>
+                            <span class="meta-pill">Content Writing</span>
+                            <span class="meta-pill"> karimunJawa</span>
+                            <span class="meta-pill">Media</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 10. Foto Kegiatan: KKN Mengabdi -->
+                <article class="portfolio-card" data-category="activity" data-badge="FOTO KEGIATAN"
+                    data-title="Event Manajmen Acara Gebyar Wisata & Budaya"
+                    data-desc="Panitia Acara Gebyar Wisata & Budaya Karimunjawa"
+                    data-tags="Dokumentasi, KKN Desa, Pengabdian Masyarakat, Fotografi">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/eoo.png" alt="Event Organizer"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">EVENT MANAGEMENT</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Event Management Acara Gebyar Wisata & Budaya Karimunjawa</h3>
+                        <p>Panitia Event Organizer kegiatan acaraGebyar Wisata & Budaya Karimunjawa </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Event Organizer</span>
+                            <span class="meta-pill">Humas</span>
+                            <span class="meta-pill">Karimunjawa</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. Foto Kegiatan: Public Speaking / Seminar -->
+                <article class="portfolio-card" data-category="activity" data-badge="PUBLIC SPEAKING"
+                    data-title="Pemateri Seminar Teknologi & Literasi Digital"
+                    data-desc="Pemateri Acara Seminar Informatika Festival "
+                    data-tags="Public Speaking, Seminar Teknologi, Edukasi, Presenter">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/bpresnter.png" alt="Pemateri Seminar Teknologi"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">PUBLIC SPEAKING</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Pemateri Seminar Teknologi & Literasi Digital</h3>
+                        <p>Menyampaikan materi pengenalan dunia teknologi informasi yang diimplementasikan di
+                            dunia kerja.</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Speaker</span>
+                            <span class="meta-pill">Seminar Kampus</span>
+                            <span class="meta-pill">Public Relations</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Magang perusahan -->
+                <article class="portfolio-card" data-category="activity" data-badge="MAGANG PERUSAHAAN"
+                    data-title="Magang Industri PT Mitra Aplikasi Teknologi"
+                    data-desc="Magang di industri teknologi informasi " data-tags="on Training Job, Quality Control">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/smitra.png" alt="Magang Perusahan"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">MAGANG INDUSTRI</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Magang Industri PT Mitra Aplikasi Teknologi</h3>
+                        <p>Magang di industri Perusahan IT Sebagai Quality Control </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">IT Industrial</span>
+                            <span class="meta-pill">Quality Control</span>
+                            <span class="meta-pill">IT Staff</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Event Management -->
+                <article class="portfolio-card" data-category="activity" data-badge="EVENT ORGANIZER"
+                    data-title="Event Organizer" data-desc="Event Organizer"
+                    data-tags="Event Management, Event Planning, Event Coordination">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/eo.png" alt="Event Organizer"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">EVENT ORGANIZER</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Event Organizer</h3>
+                        <p>Event Organizer</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Event Organizer</span>
+                            <span class="meta-pill">Event Management</span>
+                            <span class="meta-pill">Event Planning</span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- 12. Foto Kegiatan: Event Management & Workshop (Supports YouTube Video Recap) -->
+                <article class="portfolio-card" data-category="activity" data-badge="VIDEOGRAPHY"
+                    data-title="Videography dan Editing"
+                    data-desc="Dokumentasi peran saya sebagai videography dan editing" data-tags=""
+                    data-youtube="https://youtu.be/WxFDzTzJL_g?si=TswotZfxL4FSTFNm">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/vidpof.png" alt="Videography"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">VIDEOGRAPHY</span>
+                        <span class="video-badge-pill">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
+                            </svg>
+                            Video
+                        </span>
+                        <div class="play-video-overlay">
+                            <div class="play-btn-circle">
+                                <svg class="icon-svg icon-svg-lg" viewBox="0 0 24 24">
+                                    <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Produksi Video Editing</h3>
+                        <p>Produksi Video Kegiatan Himpunan Mahasiswa Informatika</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Videography</span>
+                            <span class="meta-pill">Editing</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13. Foto Kegiatan: Jurnalistik -->
+                <article class="portfolio-card" data-category="activity" data-badge="JURNALISTIK & MEDIA"
+                    data-title="News & Event" data-desc="Jurnalistik Berita Kerja Kuliah Nyata"
+                    data-tags="Journalism, Liputan Lapangan, Fotografi Pers, Rilis Berita">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/news.png" alt="News & Event"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">JURNALISTIK</span>
+                        <div class="portfolio-zoom-icon">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <line x1="7" y1="17" x2="17" y2="7" />
+                                <polyline points="7 7 17 7 17 17" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Liputan Jurnalistik & Media</h3>
+                        <p>Pembuatan Koten media Berita atau Blog sebagai Liputan Media</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Journalism</span>
+                            <span class="meta-pill">Media Coverage</span>
+                            <span class="meta-pill">Press</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14. Foto Kegiatan: Pemotretan & Behind The Scene Video (Supports YouTube Video BTS) -->
+                <article class="portfolio-card" data-category="activity" data-badge="FOTOGRAFI & VIDEO"
+                    data-title="Podcast Himpunan Mahasiswa Informatika"
+                    data-desc="Podcast adalah salah satu program kerja Himpunan Mahasiswa Informatika yang bertujuan untuk memberikan informasi dan edukasi kepada mahasiswa informatika."
+                    data-tags="Videography, Photography, Camera Operator, Behind The Scene"
+                    data-youtube="https://youtu.be/ZXwijXrUJA8?si=KZTCvkeDjgLYm25j">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/himapo.png" alt="Produksi Video Kreatif"
+                            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80';"
+                            loading="lazy">
+                        <span class="portfolio-badge">PODCAST</span>
+                        <span class="video-badge-pill">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
+                            </svg>
+                            VIDEO
+                        </span>
+                        <div class="play-video-overlay">
+                            <div class="play-btn-circle">
+                                <svg class="icon-svg icon-svg-lg" viewBox="0 0 24 24">
+                                    <polygon points="5 3 19 12 5 21 5 3" fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Produksi PODCAST Himpunan Mahasiswa Informatika</h3>
+                        <p>Dokumentasi proses produksi video kreatif, pencahayaan studio lapangan, dan perekaman visual
+                            sinematik.</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-pill">Camera Shoot</span>
+                            <span class="meta-pill">Videography</span>
+                            <span class="meta-pill">Video BTS Tersedia</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- DISCLAIMER KONTEN INTERNAL PERUSAHAAN & INSTANSI -->
+            <div class="internal-disclaimer-box">
+                <!-- Tanda Peringatan Menyala Merah di Kanan Atas -->
+                <div class="glowing-warning-badge" title="Peringatan Konten Internal">
+                    <span class="red-beacon-pulse" aria-hidden="true"></span>
+                    <svg class="icon-svg icon-svg-sm warning-icon-glow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                        <line x1="12" y1="9" x2="12" y2="13" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    <span class="warning-badge-text">Proyek Internal</span>
+                </div>
+
+                <div class="disclaimer-icon-badge">
+                    <svg class="icon-svg icon-svg-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="23 7 16 12 23 17 23 7" />
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                    </svg>
+                </div>
+                
+                <div class="disclaimer-text-wrap">
+                    <h4>Beberapa karya desain dan sistem lainnya tidak ditampilkan di sini karena merupakan bagian dari proyek internal perusahaan maupun instansi terkait.</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA TO CONTACT & CV -->
+        <section class="container">
+            <div class="cta-banner">
+                <span class="eyebrow"
+                    style="background:rgba(255,255,255,0.15); color:#a7f3d0; border-color:rgba(167,243,208,0.3);">INGIN
+                    TAHU LEBIH JAUH?</span>
+                <h2>Punya pertanyaan mengenai proyek atau ingin berdiskusi?</h2>
+                <p>Saya dengan senang hati akan menjelaskan detail teknis dari setiap proyek, arsitektur kode, maupun
+                    proses kreatif di balik setiap karya yang telah saya selesaikan.</p>
+                <div style="display:flex; gap:14px; flex-wrap:wrap;">
+                    <a href="contact.html" class="btn btn-white btn-lg">
+                        Kirim Pesan ke Saya
+                        <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                            <line x1="7" y1="17" x2="17" y2="7" />
+                            <polyline points="7 7 17 7 17 17" />
+                        </svg>
+                    </a>
+                    <a href="contact.html#download-cv" class="btn btn-secondary btn-lg"
+                        style="background:transparent; color:white; border-color:rgba(255,255,255,0.4);">
+                        <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Unduh CV (ATS / Kreatif)
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="brand-logo">RH<span class="dot">.</span></a>
+                <p>Rakhmat Hidayat, S.Kom — Sarjana Komputer, Staff Event Organizer, dan Praktisi Media Digital asal
+                    Batang, Jawa Tengah.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang Saya</a></li>
+                    <li><a href="portfolio.html">Portofolio & Kegiatan</a></li>
+                    <li><a href="contact.html">Kontak & Unduh CV</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Unduh CV</h4>
+                <ul>
+                    <li>
+                        <a href="assets/cv/CV_ATS_Rakhmat_Hidayat.pdf" download="CV_ATS_Rakhmat_Hidayat.pdf">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="12" y1="18" x2="12" y2="12" />
+                                <line x1="9" y1="15" x2="15" y2="15" />
+                            </svg>
+                            CV Format ATS (PDF)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="assets/cv/CV_Kreatif_Rakhmat_Hidayat.pdf" download="CV_Kreatif_Rakhmat_Hidayat.pdf">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="12 8 8 12 12 16 16 12 12 8" />
+                            </svg>
+                            CV Format Kreatif (PDF)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Kontak & Media</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/rakhaa_mt/" target="_blank" rel="noopener">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                            @rakhaa_mt ↗
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/6285742976911" target="_blank" rel="noopener">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg>
+                            +62 8574-2976-911 ↗
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:hidayatrakhmat38@gmail.com">
+                            <svg class="icon-svg icon-svg-sm" viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            hidayatrakhmat38@gmail.com ↗
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2026 Rakhmat Hidayat, S.Kom. Hak cipta dilindungi.</p>
+            <a href="#">Kembali ke atas ↑</a>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX / PROJECT MODAL -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Tutup">✕</button>
+            <div class="modal-media-container">
+                <div class="modal-image-holder" id="modalImageHolder">
+                    <img id="modalImg" src="" alt="Detail Proyek">
+                </div>
+                <div class="modal-video-holder" id="modalVideoHolder">
+                    <iframe id="modalIframe" src=""
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="modal-body">
+                <span class="modal-badge" id="modalBadge">KATEGORI</span>
+                <h3 id="modalTitle">Judul Proyek</h3>
+                <p id="modalDesc">Deskripsi lengkap proyek akan tampil di sini.</p>
+                <div class="modal-meta-tags" id="modalTags"></div>
+                <div class="modal-video-link-wrap" id="modalVideoLinkWrap"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
